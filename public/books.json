@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/rv9n4gJ/book-1.png"
+    },
+    {
+        "id": 2,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/1QC0TXz/book-2.png"
+    },
+    {
+        "id": 3,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/g7qCKhW/book3.png"
+    },
+    {
+        "id": 4,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/swgT3KC/book-3.png"
+    },
+    {
+        "id": 5,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/D7ZR0VH/book-4.png"
+    },
+    {
+        "id": 6,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/qmHRCy7/book5.png"
+    },
+    {
+        "id": 7,
+        "name": "purnotboti",
+        "price": 120,
+        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/q9WT9CL/book-5.png"
+    }
+    
+    
+]
