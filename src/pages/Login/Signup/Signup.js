@@ -3,7 +3,7 @@ import facebook from "../../../images/fb.png";
 import google from "../../../images/gp.png";
 import twiter from "../../../images/tw.png";
 import banner from "../../../images/banner.jpg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from '../../../firebase.init';
 import {
  
@@ -21,6 +21,8 @@ const Signup = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
  
   const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
   let signInError;
   if ( error || gError || updateError) {
     signInError = (
@@ -36,7 +38,7 @@ const Signup = () => {
 
 
    if(user || gUser){
-    navigate('/home');
+    navigate(from, { replace: true });
    }
 
     const handleLogin = async(event) => {

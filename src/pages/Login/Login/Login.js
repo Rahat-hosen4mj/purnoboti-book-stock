@@ -4,7 +4,7 @@ import facebook from "../../../images/fb.png";
 import google from "../../../images/gp.png";
 import twiter from "../../../images/tw.png";
 import banner from "../../../images/banner.jpg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import Loading from "../../Shared/Loading";
@@ -19,7 +19,8 @@ const Login = () => {
   ] = useSignInWithEmailAndPassword(auth);
 
   const navigate = useNavigate();
-  
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
   let signInError;
   if(gError) {
     signInError = (
@@ -35,7 +36,7 @@ const Login = () => {
   // bookStock  KdPLJgGQLl6tjF96
 
   if(user || gUser) {
-    navigate('/home');
+    navigate(from, { replace: true });
   }
   const handleLogin = async(event) => {
     event.preventDefault();

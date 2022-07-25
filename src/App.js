@@ -2,13 +2,12 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './pages/About/About';
 import Home from './pages/Home/Home/Home';
-import UpdateInfo from './pages/Home/UpdateInfo/UpdateInfo';
+import UpdateDetail from './pages/Home/UpdateDetail/UpdateDetail';
 import Login from './pages/Login/Login/Login';
 import Signup from './pages/Login/Signup/Signup';
-
-import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/Shared/NotFound/NotFound';
+import RequireAuth from './pages/Shared/RequireAuth';
 
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
       <Route path='/' element={<Home />}></Route>
       <Route path='/home' element={<Home />}></Route>
       <Route path='/about' element={<About />}></Route>
-      <Route path='/inventory/:updateId' element={<UpdateInfo />}></Route>
+      <Route path='/inventory/:updateId' element={<RequireAuth><UpdateDetail /></RequireAuth>}></Route>
       <Route path='/login' element={<Login />}></Route>
       <Route path='/signup' element={<Signup />}></Route>
       <Route path='*' element={<NotFound />}></Route>

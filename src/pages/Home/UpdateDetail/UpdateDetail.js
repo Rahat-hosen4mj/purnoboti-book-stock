@@ -1,15 +1,16 @@
-import React from "react";
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import {  useParams } from "react-router-dom";
 
-const Service = ({ service }) => {
-  const { name, img, description, _id } = service;
-  const navigate = useNavigate()
-  const navigateToUpdatePage = id =>{
-    navigate(`/inventory/${id}`)
-  }
-  return (
-    <>
-      <div className="gx-3 col-sm-12 col-md-6">
+import useUpdateDetail from '../../../hook/useUpdateDetail';
+
+const UpdateDetail = ({service}) => {
+    const {updateId} = useParams();
+    const [bookDetail] = useUpdateDetail(updateId);
+    const {name, description, price,img} = bookDetail
+   
+    return (
+       <div className='mt-5 py-5 mx-auto w-75 mx-auto'>
+         <div className="gx-3 col-sm-12 col-md-6 pl-5 ml-5">
         <div className="card mb-3" style={{maxWidth: "540px"} } >
           <div className="row g-0">
             <div className="col-md-4">
@@ -22,15 +23,15 @@ const Service = ({ service }) => {
                     {description}
                 </p>
                 <p className="card-text">
-                  <button onClick={() => navigateToUpdatePage(_id)} className="btn btn-success">Update</button>
+                  <button  className="btn btn-success">Deliver</button>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
-  );
+       </div>
+    );
 };
 
-export default Service;
+export default UpdateDetail;
