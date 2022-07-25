@@ -4,13 +4,43 @@ import facebook from "../../../images/fb.png";
 import google from "../../../images/gp.png";
 import twiter from "../../../images/tw.png";
 import banner from "../../../images/banner.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import Loading from "../../Shared/Loading";
 
 const Login = () => {
-  const handleLogin = (event) => {
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
+
+  const navigate = useNavigate();
+  
+  let signInError;
+  if(gError) {
+    signInError = (
+      <p className="text-red-500">
+        <small>{error?.message}</small>
+      </p>
+    );
+  }
+
+  if(loading || gLoading){
+    return <Loading />
+  }
+
+  if(user || gUser) {
+    navigate('/home');
+  }
+  const handleLogin = async(event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
+    await signInWithEmailAndPassword(email, password)
     console.log(email, password);
     event.target.reset();
   };
@@ -29,7 +59,7 @@ const Login = () => {
         </div>
         <div className="social-icon">
           <img src={facebook} alt="" />
-          <img src={google} alt="" />
+          <img onClick={() => signInWithGoogle()} src={google} alt="" />
           <img src={twiter} alt="" />
         </div>
         <form onSubmit={handleLogin} id="login" className="input-group">
@@ -60,6 +90,7 @@ const Login = () => {
           />{" "}
           <br />
         </form>
+        {signInError}
       </div>
     </div>
   );
