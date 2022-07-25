@@ -4,8 +4,15 @@ import google from "../../../images/gp.png";
 import twiter from "../../../images/tw.png";
 import banner from "../../../images/banner.jpg";
 import { Link } from "react-router-dom";
+import auth from '../../../firebase.init';
+import {
+ 
+  useSignInWithGoogle,
+ 
+} from "react-firebase-hooks/auth";
 
 const Signup = () => {
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const handleLogin = (event) => {
         event.preventDefault();
         const name = event.target.name.value
@@ -14,6 +21,9 @@ const Signup = () => {
         console.log(name, email, password);
         event.target.reset();
       };
+      const facebookSign = ()=>{
+        console.log('sing in btn clicked')
+      }
     return (
         <div
         style={{
@@ -28,8 +38,8 @@ const Signup = () => {
             </button>
           </div>
           <div className="social-icon">
-            <img src={facebook} alt="" />
-            <img src={google} alt="" />
+            <img onClick={facebookSign} src={facebook} alt="" />
+            <img onClick={() => signInWithGoogle()} src={google} alt="" />
             <img src={twiter} alt="" />
           </div>
           <form onSubmit={handleLogin} id="login" className="input-group">
