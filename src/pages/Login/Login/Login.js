@@ -32,6 +32,7 @@ const Login = () => {
   if(loading || gLoading){
     return <Loading />
   }
+  // bookStock  KdPLJgGQLl6tjF96
 
   if(user || gUser) {
     navigate('/home');
@@ -52,10 +53,10 @@ const Login = () => {
       className="hero"
     >
       <div className="form-box">
-        <div className="text-center my-3">
-          <button type="button" className="btn btn-success ">
-            Social Sign In
-          </button>
+      <div className="text-center my-3">
+            
+            <h2 className='text-primary pt-3'>Social Sign In</h2>
+         
         </div>
         <div className="social-icon">
           <img src={facebook} alt="" />

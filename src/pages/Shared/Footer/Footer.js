@@ -103,7 +103,7 @@ const Footer = () => {
 
         <div className="credit">
           {" "}
-          created by <span>mr. Rahat hosen</span> | all rights reserved!{" "}
+          created by <span>@mr. Rahat hosen</span> | all rights reserved!{" "}
         </div>
       </section>
     </div>
