@@ -3,12 +3,12 @@ import book from '../../../images/book7.png'
 
 const Upcoming = () => {
   return (
-    <section class="deal">
+    <section className="deal">
         
-        <div class="image">
+        <div className="image">
           <img className="w-50" src={book} alt="" />
         </div>
-        <div class="content">
+        <div className="content">
           <h3>Upcoming product</h3>
           <h1>upto 50% off</h1>
           <p>

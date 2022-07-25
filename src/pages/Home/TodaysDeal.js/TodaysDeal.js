@@ -4,8 +4,8 @@ import dealImg from '../../../images/deal-img.jpg'
 const TodaysDeal = () => {
   return (
     <div>
-      <section class="deal">
-        <div class="content">
+      <section className="deal">
+        <div className="content">
           <h3>deal of the day</h3>
           <h1>upto 50% off</h1>
           <p>
@@ -13,12 +13,12 @@ const TodaysDeal = () => {
             perspiciatis in atque dolore tempora quaerat at fuga dolorum natus
             velit.
           </p>
-          <a href="#" class="btn">
+          <a href="#" className="btn">
             shop now
           </a>
         </div>
 
-        <div class="image">
+        <div className="image">
           <img src={dealImg} alt="" />
         </div>
       </section>

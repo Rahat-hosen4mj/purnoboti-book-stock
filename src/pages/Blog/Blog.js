@@ -6,13 +6,13 @@ import blog3 from "../../images/blog-3.jpg";
 const Blog = () => {
   return (
     <section>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src={blog1} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="col">
+          <div className="card h-100">
+            <img src={blog1} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
@@ -21,12 +21,12 @@ const Blog = () => {
            
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src={blog2} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+        <div className="col">
+          <div className="card h-100">
+            <img src={blog2} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
@@ -34,10 +34,10 @@ const Blog = () => {
             
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src={blog3} class="card-img-top" alt="..." />
-            <div class="card-body">
+        <div className="col">
+          <div className="card h-100">
+            <img src={blog3} className="card-img-top" alt="..." />
+            <div className="card-body">
               <h5 >Card title</h5>
               <p>
                 This is a wider card with supporting text below as a natural

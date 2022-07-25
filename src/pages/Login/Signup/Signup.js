@@ -3,27 +3,52 @@ import facebook from "../../../images/fb.png";
 import google from "../../../images/gp.png";
 import twiter from "../../../images/tw.png";
 import banner from "../../../images/banner.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import auth from '../../../firebase.init';
 import {
  
+  useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
+  useUpdateProfile,
  
 } from "react-firebase-hooks/auth";
+import Loading from '../../Shared/Loading';
 
 const Signup = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-    const handleLogin = (event) => {
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+ 
+  const navigate = useNavigate();
+  let signInError;
+  if ( error || gError || updateError) {
+    signInError = (
+      <p className="text-danger fs-5 pt-3">
+        <small>{gError?.message}</small>
+      </p>
+    );
+  }
+ 
+  if (loading || gLoading || updating) {
+    return <Loading />;
+  }
+
+
+   if(user || gUser){
+    navigate('/home');
+   }
+
+    const handleLogin = async(event) => {
         event.preventDefault();
         const name = event.target.name.value
         const email = event.target.email.value;
         const password = event.target.password.value;
-        console.log(name, email, password);
-        event.target.reset();
+        await createUserWithEmailAndPassword(email,password);
+        await updateProfile({ displayName :name });
+        console.log("update done");
       };
-      const facebookSign = ()=>{
-        console.log('sing in btn clicked')
-      }
+      
     return (
         <div
         style={{
@@ -33,12 +58,12 @@ const Signup = () => {
       >
         <div id='signUp-formBox' className="form-box">
           <div className="text-center my-3">
-            <button type="button" className="btn btn-success ">
-              Social Sign In
-            </button>
+            
+              <h2 className='text-primary pt-3'>Social Sign In</h2>
+           
           </div>
-          <div className="social-icon">
-            <img onClick={facebookSign} src={facebook} alt="" />
+          <div className="social-icon" >
+            <img src={facebook} alt="" />
             <img onClick={() => signInWithGoogle()} src={google} alt="" />
             <img src={twiter} alt="" />
           </div>
@@ -69,6 +94,7 @@ const Signup = () => {
               Already have an Account ?{" "}
               <Link to="/login">Please Login</Link>
             </span>
+            
             <input
               className="form-submit btn rounded btn-success py-2 mt-2 px-5"
               type="submit"
@@ -76,8 +102,9 @@ const Signup = () => {
             />{" "}
             <br />
           </form>
+          {signInError}
         </div>
-  
+        
        
       </div>
     );

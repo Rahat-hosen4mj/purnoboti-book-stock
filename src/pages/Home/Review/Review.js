@@ -3,50 +3,50 @@ import reviewPic from '../../../images/pic-5.png'
 
 const Review = () => {
     return (
-        <section class="reviews" id="reviews">
+        <section className="reviews" id="reviews">
 
-    <h1 class="heading"> <span>client's reviews</span> </h1>
+    <h1 className="heading"> <span>client's reviews</span> </h1>
 
-    <div class="swiper reviews-slider">
+    <div className="swiper reviews-slider">
 
-        <div class="swiper-wrapper">
+        <div className="swiper-wrapper">
 
-            <div class="swiper-slide box">
+            <div className="swiper-slide box">
                 <img src={reviewPic} alt="" />
                 <h3>john deo</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div className="stars">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star-half-alt"></i>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
+            <div className="swiper-slide box">
                 <img src={reviewPic} alt="" />
                 <h3>john deo</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div className="stars">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star-half-alt"></i>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
+            <div className="swiper-slide box">
                 <img src={reviewPic} alt="" />
                 <h3>john deo</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div className="stars">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star-half-alt"></i>
                 </div>
             </div>
           

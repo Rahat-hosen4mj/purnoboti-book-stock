@@ -5,103 +5,103 @@ import worldMap from '../../../images/worldmap.png'
 const Footer = () => {
   return (
     <div>
-      <section class="footer">
-        <div class="box-container">
-          <div class="box">
+      <section className="footer">
+        <div className="box-container">
+          <div className="box">
             <h3>our locations</h3>
             <a href="www">
               {" "}
-              <i class="fas fa-map-marker-alt"></i> india{" "}
+              <i className="fas fa-map-marker-alt"></i> india{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-map-marker-alt"></i> USA{" "}
+              <i className="fas fa-map-marker-alt"></i> USA{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-map-marker-alt"></i> russia{" "}
+              <i className="fas fa-map-marker-alt"></i> russia{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-map-marker-alt"></i> france{" "}
+              <i className="fas fa-map-marker-alt"></i> france{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-map-marker-alt"></i> japan{" "}
+              <i className="fas fa-map-marker-alt"></i> japan{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-map-marker-alt"></i> africa{" "}
+              <i className="fas fa-map-marker-alt"></i> africa{" "}
             </a>
           </div>
 
-          <div class="box">
+          <div className="box">
             <h3>quick links</h3>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> home{" "}
+              <i className="fas fa-arrow-right"></i> home{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> featured{" "}
+              <i className="fas fa-arrow-right"></i> featured{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> arrivals{" "}
+              <i className="fas fa-arrow-right"></i> arrivals{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> reviews{" "}
+              <i className="fas fa-arrow-right"></i> reviews{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> blogs{" "}
+              <i className="fas fa-arrow-right"></i> blogs{" "}
             </a>
           </div>
 
-          <div class="box">
+          <div className="box">
             <h3>extra links</h3>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> account info{" "}
+              <i className="fas fa-arrow-right"></i> account info{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> ordered items{" "}
+              <i className="fas fa-arrow-right"></i> ordered items{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> privacy policy{" "}
+              <i className="fas fa-arrow-right"></i> privacy policy{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> payment method{" "}
+              <i className="fas fa-arrow-right"></i> payment method{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-arrow-right"></i> our serivces{" "}
+              <i className="fas fa-arrow-right"></i> our serivces{" "}
             </a>
           </div>
 
-          <div class="box">
+          <div className="box">
             <h3>contact info</h3>
             <a href="www">
               {" "}
-              <i class="fas fa-phone"></i> +123-456-7890{" "}
+              <i className="fas fa-phone"></i> +123-456-7890{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-phone"></i> +111-222-3333{" "}
+              <i className="fas fa-phone"></i> +111-222-3333{" "}
             </a>
             <a href="www">
               {" "}
-              <i class="fas fa-envelope"></i> shaikhanas@gmail.com{" "}
+              <i className="fas fa-envelope"></i> shaikhanas@gmail.com{" "}
             </a>
            
           </div>
         </div>
 
-        <div class="credit">
+        <div className="credit">
           {" "}
           created by <span>mr. Rahat hosen</span> | all rights reserved!{" "}
         </div>
