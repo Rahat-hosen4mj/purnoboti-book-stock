@@ -48,7 +48,12 @@
     position: absolute;
     width: 280px;
     margin-left: 1.5rem;
-   
+}
+.addItem-group{
+    top: 3rem; 
+    position: absolute;
+    width: 280px;
+    margin-left: 1.5rem;
 }
 .input-field{
     width: 100%;
