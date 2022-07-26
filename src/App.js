@@ -13,6 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AddItem from './pages/Shared/AddItem/AddItem';
 import MyOrder from './pages/MyOrder/MyOrder';
+import Blog from './pages/Blog/Blog';
 
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
      <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='/home' element={<Home />}></Route>
+      <Route path='/blog' element={<Blog />}></Route>
       <Route path='/about' element={<About />}></Route>
       <Route path='/inventory/:updateId' element={<RequireAuth><UpdateDetail /></RequireAuth>}></Route>
-      <Route path='/manageStock' element={<ManageStock />}></Route>
+      <Route path='/manageStock' element={<RequireAuth><ManageStock /></RequireAuth>}></Route>
       <Route path='/myOrder' element={<MyOrder />}></Route>
       <Route path='/addItem' element={<AddItem />}></Route>
       <Route path='/login' element={<Login />}></Route>

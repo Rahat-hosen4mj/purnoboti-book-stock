@@ -1,43 +1,43 @@
 [
     {
         "id": 1,
-        "name": "purnotboti",
+        "name": "The Art City",
         "price": 120,
-        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "description": "Grandma has come to stay for the royal visit by Princess Lucy to laun...",
         "quantity" : 2,
         "supplier": "rokomary",
         "img": "https://i.ibb.co/rv9n4gJ/book-1.png"
     },
     {
         "id": 2,
-        "name": "purnotboti",
+        "name": "Muktaboti",
         "price": 120,
-        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "description": "Fantastic 15 picture book collection of by renowned Australian authors and illustrators.",
         "quantity" : 2,
         "supplier": "rokomary",
         "img": "https://i.ibb.co/1QC0TXz/book-2.png"
     },
     {
         "id": 3,
-        "name": "purnotboti",
+        "name": "rook Star",
         "price": 120,
-        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "description": "This fascinating and fierce collection of twenty of the world’s most d...",
         "quantity" : 2,
         "supplier": "rokomary",
         "img": "https://i.ibb.co/g7qCKhW/book3.png"
     },
     {
         "id": 4,
-        "name": "purnotboti",
+        "name": "Your name",
         "price": 120,
-        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "description": " Meet Snugglepot and Cuddlepie, One Woolly Wombat, The Cow Tripped Over the Moon",
         "quantity" : 2,
         "supplier": "rokomary",
         "img": "https://i.ibb.co/swgT3KC/book-3.png"
     },
     {
         "id": 5,
-        "name": "purnotboti",
+        "name": "Simple test",
         "price": 120,
         "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
         "quantity" : 2,
@@ -46,9 +46,9 @@
     },
     {
         "id": 6,
-        "name": "purnotboti",
+        "name": "Thanks of Thanking",
         "price": 120,
-        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "description": " Books in the Let’s Talk series contain follow up activities to support...",
         "quantity" : 2,
         "supplier": "rokomary",
         "img": "https://i.ibb.co/qmHRCy7/book5.png"
@@ -57,10 +57,37 @@
         "id": 7,
         "name": "purnotboti",
         "price": 120,
-        "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure veniam ducimus!",
+        "description": "Nicholas Ickle is trying to tell a story, but he keeps getting interrupted by characters from other stories-a pirate, a queen",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/g7qCKhW/book3.png"
+    },
+    {
+        "id": 7,
+        "name": "Your Goal here",
+        "price": 120,
+        "description": "Nick Bland is a published illustrator of children’s books. A published credit of Nick Bland is I Lost My Kisses.",
         "quantity" : 2,
         "supplier": "rokomary",
         "img": "https://i.ibb.co/q9WT9CL/book-5.png"
+    },
+    {
+        "id": 7,
+        "name": "purnotboti",
+        "price": 120,
+        "description": "Books in the Let’s Talk series contain follow up activities to suppor...",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/D7ZR0VH/book-4.png"
+    },
+    {
+        "id": 7,
+        "name": "Place Your text",
+        "price": 120,
+        "description": "Grandma has come to stay for the royal visit by Princess Lucy to launch her new badger charity,",
+        "quantity" : 2,
+        "supplier": "rokomary",
+        "img": "https://i.ibb.co/qmHRCy7/book5.png"
     }
     
     
