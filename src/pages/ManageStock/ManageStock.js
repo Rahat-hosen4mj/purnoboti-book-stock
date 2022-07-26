@@ -11,7 +11,7 @@ const ManageStock = () => {
   }
     return (
         <div className="container my-3">
-        <h1 className="text-success content my-3 py-4 text-center">Our Books : {books?.length} </h1>
+        <h1 className="text-success content my-3 py-4 text-center">Total Books : {books?.length} </h1>
         <div className="row mx-auto w-100">
         
         {

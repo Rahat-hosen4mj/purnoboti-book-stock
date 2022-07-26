@@ -6,7 +6,7 @@ import useUpdateDetail from '../../../hook/useUpdateDetail';
 const UpdateDetail = ({service}) => {
     const {updateId} = useParams();
     const [bookDetail] = useUpdateDetail(updateId);
-    const {name, description, price,img} = bookDetail
+    const {name, description, supplier, price, quantity, img} = bookDetail
    
     return (
        <div className='mt-5 py-5 mx-auto w-75 mx-auto'>
@@ -22,6 +22,9 @@ const UpdateDetail = ({service}) => {
                 <p className=" fs-5">
                     {description}
                 </p>
+                <h4>Price : {price} </h4>
+                <h5>Suplier : {supplier} </h5>
+                <h4>Quantity : {quantity} </h4>
                 <p className="card-text">
                   <button  className="btn btn-success">Deliver</button>
                 </p>

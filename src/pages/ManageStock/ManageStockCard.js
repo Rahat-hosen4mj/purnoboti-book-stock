@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const ManageStockCard = ({book, refetch}) => {
-    const {img, name, description, _id} = book
+    const {img, name, description, _id,supplier, price, quantity} = book
 
     const handleDelete = () => {
         fetch(`http://localhost:5000/book/${_id}`, {
@@ -33,6 +33,9 @@ const ManageStockCard = ({book, refetch}) => {
                 <p className=" fs-5">
                     {description}
                 </p>
+                <h4>Price : {price} </h4>
+                <h5>Suplier : {supplier} </h5>
+                <h4>Quantity : {quantity} </h4>
                 <p className="d-flex ">
                   <button className="btn btn-success">Deliver</button>
                   <button onClick={() => handleDelete()} className="btn btn-danger border border-danger mx-5 border-2">Remove</button>

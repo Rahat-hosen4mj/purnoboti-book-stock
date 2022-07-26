@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 
 const Service = ({ service }) => {
-  const { name, img, description, _id } = service;
+  const { name, img, description, _id, supplier, price, quantity } = service;
   const navigate = useNavigate()
   const navigateToUpdatePage = id =>{
     navigate(`/inventory/${id}`)
@@ -21,6 +21,9 @@ const Service = ({ service }) => {
                 <p className=" fs-5">
                     {description}
                 </p>
+                <h4>Price : {price} </h4>
+                <h5>Suplier : {supplier} </h5>
+                <h4>Quantity : {quantity} </h4>
                 <p className="card-text">
                   <button onClick={() => navigateToUpdatePage(_id)} className="btn btn-success">Update</button>
                 </p>

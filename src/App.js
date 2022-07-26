@@ -12,6 +12,7 @@ import RequireAuth from './pages/Shared/RequireAuth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AddItem from './pages/Shared/AddItem/AddItem';
+import MyOrder from './pages/MyOrder/MyOrder';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path='/about' element={<About />}></Route>
       <Route path='/inventory/:updateId' element={<RequireAuth><UpdateDetail /></RequireAuth>}></Route>
       <Route path='/manageStock' element={<ManageStock />}></Route>
+      <Route path='/myOrder' element={<MyOrder />}></Route>
       <Route path='/addItem' element={<AddItem />}></Route>
       <Route path='/login' element={<Login />}></Route>
       <Route path='/signup' element={<Signup />}></Route>
