@@ -2,10 +2,13 @@ import React from 'react';
 import banner from "../../../images/banner.jpg";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 
 const AddItem = () => {
     const navigate = useNavigate();
+    const [user] = useAuthState(auth);
 
     const addItem = event =>{
         event.preventDefault();
@@ -20,8 +23,11 @@ const AddItem = () => {
             name: name,
             suplier: suplier,
             price: price,
+            description: description,
+            quantity: quantity,
+            email: user.email
           };
-          fetch("http://localhost:5000/book", {
+          fetch("http://localhost:5000/item", {
             method: "POST",
             headers: {
               "content-type": "application/json",

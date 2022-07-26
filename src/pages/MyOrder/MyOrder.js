@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const MyOrder = () => {
+    const [user] = useAuthState(auth);
+    const [orders, setOrders] = useState([])
+    const navigate = useNavigate()
+    useEffect(() =>{
+        if(user){
+            fetch(`http://localhost:5000/item?email=${user.email}`)
+           .then(res => res.json())
+            .then(data => setOrders(data))
+        }
+    },[user])
   return (
     <section className="my-order">
+        <h2>Total items : {orders.length} </h2>
       <div className="content">
         <div className="w-75 mx-auto  fs-4">
           <table className="table table-striped table-hover">
@@ -12,26 +26,21 @@ const MyOrder = () => {
                 <th scope="col">Name</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Price</th>
+                <th scope="col">Suplier</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+               {
+                orders.map(order => <>
+                <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>{order.name}</td>
+                <td>{order.quantity}</td>
+                <td>{order.price}</td>
+                <td>{order.suplier}</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
+                </>)
+               }
             </tbody>
           </table>
         </div>
