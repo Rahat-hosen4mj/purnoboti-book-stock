@@ -9,6 +9,8 @@ import ManageStock from './pages/ManageStock/ManageStock';
 import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/Shared/NotFound/NotFound';
 import RequireAuth from './pages/Shared/RequireAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
       <Route path='/signup' element={<Signup />}></Route>
       <Route path='*' element={<NotFound />}></Route>
      </Routes>
-     
+     <ToastContainer />
      {/* <Footer /> */}
     </div>
 

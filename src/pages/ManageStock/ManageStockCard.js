@@ -1,7 +1,25 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const ManageStockCard = ({book}) => {
-    const {img, name, description} = book
+const ManageStockCard = ({book, refetch}) => {
+    const {img, name, description, _id} = book
+
+    const handleDelete = () => {
+        fetch(`http://localhost:5000/book/${_id}`, {
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.deletedCount) {
+                    toast.success(`Stock: ${name} is deleted.`)
+                   refetch()
+                }
+            })
+    }
     return (
         <div className="gx-3 col-sm-12 col-md-6">
         <div className="card mb-3" style={{maxWidth: "540px"} } >
@@ -17,7 +35,7 @@ const ManageStockCard = ({book}) => {
                 </p>
                 <p className="d-flex ">
                   <button className="btn btn-success">Deliver</button>
-                  <button className="btn btn-danger border border-danger mx-5 border-2">Remove</button>
+                  <button onClick={() => handleDelete()} className="btn btn-danger border border-danger mx-5 border-2">Remove</button>
                 </p>
               </div>
             </div>

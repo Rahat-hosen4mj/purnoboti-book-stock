@@ -15,7 +15,7 @@ const ManageStock = () => {
         <div className="row mx-auto w-100">
         
         {
-            books?.map(book => <ManageStockCard book={book} key={book._id}></ManageStockCard>)
+            books?.map(book => <ManageStockCard book={book} refetch={refetch} key={book._id}></ManageStockCard>)
         }
         </div>
        </div>
