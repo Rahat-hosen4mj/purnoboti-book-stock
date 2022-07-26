@@ -5,7 +5,7 @@ const ManageStockCard = ({book, refetch}) => {
     const {img, name, description, _id,supplier, price, quantity} = book
 
     const handleDelete = () => {
-        fetch(`http://localhost:5000/book/${_id}`, {
+        fetch(`https://infinite-citadel-86759.herokuapp.com/book/${_id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'

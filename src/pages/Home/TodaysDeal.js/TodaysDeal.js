@@ -9,11 +9,10 @@ const TodaysDeal = () => {
           <h3>deal of the day</h3>
           <h1>upto 50% off</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-            perspiciatis in atque dolore tempora quaerat at fuga dolorum natus
-            velit.
+          Check out some of the great books that have just arrived or our best sellers.
+Lots of fantastic BARGAINS below, many for under $10.00.
           </p>
-          <a href="#" className="btn">
+          <a href="www" className="btn">
             shop now
           </a>
         </div>

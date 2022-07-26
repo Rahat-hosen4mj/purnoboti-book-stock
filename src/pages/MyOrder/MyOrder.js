@@ -9,7 +9,7 @@ const MyOrder = () => {
     const navigate = useNavigate()
     useEffect(() =>{
         if(user){
-            fetch(`http://localhost:5000/item?email=${user.email}`)
+            fetch(`https://infinite-citadel-86759.herokuapp.com/item?email=${user.email}`)
            .then(res => res.json())
             .then(data => setOrders(data))
         }

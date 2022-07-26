@@ -11,7 +11,7 @@ const Blog = () => {
           <div className="card h-100">
             <img src={blog1} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Blog title</h5>
               <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -25,7 +25,7 @@ const Blog = () => {
           <div className="card h-100">
             <img src={blog2} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Blog title</h5>
               <p className="card-text">
                 This card has supporting text below as a natural lead-in to
                 additional content.
@@ -38,7 +38,7 @@ const Blog = () => {
           <div className="card h-100">
             <img src={blog3} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 >Card title</h5>
+              <h5 >Blog title</h5>
               <p>
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content

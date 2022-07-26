@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import ManageStockCard from './ManageStockCard';
 
 const ManageStock = () => {
-    const { data: books, isLoading, refetch } = useQuery('books', () => fetch('http://localhost:5000/book').then(res => res.json()));
+    const { data: books, isLoading, refetch } = useQuery('books', () => fetch('https://infinite-citadel-86759.herokuapp.com/book').then(res => res.json()));
   
   if (isLoading) {
       return <Loading></Loading>

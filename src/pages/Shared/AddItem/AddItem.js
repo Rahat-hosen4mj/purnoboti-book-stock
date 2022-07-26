@@ -27,7 +27,7 @@ const AddItem = () => {
             quantity: quantity,
             email: user.email
           };
-          fetch("http://localhost:5000/item", {
+          fetch("https://infinite-citadel-86759.herokuapp.com/item", {
             method: "POST",
             headers: {
               "content-type": "application/json",

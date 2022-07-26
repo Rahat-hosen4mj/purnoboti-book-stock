@@ -10,11 +10,16 @@ const Upcoming = () => {
         </div>
         <div className="content">
           <h3>Upcoming product</h3>
-          <h1>upto 50% off</h1>
+          <h1>Pig The Star (Sp. Edition)</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-            perspiciatis in atque dolore tempora quaerat at fuga dolorum natus
-            velit.
+            
+Pig just LOVES attention.
+
+In fact, hes a great, bit SHOW-OFF.
+
+But when ANOTHER star appears at the photo shoot, Pig doesn't like it.
+
+No, Pig doesn't like it at ALL…
           </p>
           
         </div>
