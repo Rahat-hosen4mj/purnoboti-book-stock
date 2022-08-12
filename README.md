@@ -2,10 +2,10 @@
 Click here for live site link [https://purnoboti-book-stock.web.app/](https://purnoboti-book-stock.web.app/)
 
 ## server side code link
-Click here for code link [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Rahat-hosen4mj](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Rahat-hosen4mj).
+Click here for code link [https://github.com/Rahat-hosen4mj/book-stock-server](https://github.com/Rahat-hosen4mj/book-stock-server).
 
 ## client site code link
-Click here for live site link [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Rahat-hosen4mj](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Rahat-hosen4mj)
+Click here for live site link [https://github.com/Rahat-hosen4mj/purnoboti-book-stock](https://github.com/Rahat-hosen4mj/purnoboti-book-stock)
 
 ## technologies (frameworks, libraries) 
 * react router
